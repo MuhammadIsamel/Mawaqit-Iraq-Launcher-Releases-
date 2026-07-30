@@ -1,6 +1,6 @@
 const username = "MuhammadIsmael";
 
-const repository = "mawaqit-iraq-launcher-Releases";
+const repository = "Mawaqit-Iraq-Launcher-Releases";
 
 
 const apiUrl =
