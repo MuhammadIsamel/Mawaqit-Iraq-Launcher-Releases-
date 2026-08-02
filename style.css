@@ -1,11 +1,9 @@
 /* =================================
    GLOBAL
 ================================= */
-
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -14,59 +12,49 @@ body {
 }
 
 /* =================================
-   HEADER
+   NEW BANNER - LOGO ON FAR LEFT
 ================================= */
-
-.top-header {
-    height: 60px;
-    padding: 0 30px;
+.main-banner {
     display: flex;
     align-items: center;
-    background: linear-gradient(90deg, #1B5E20, #43A047);
+    gap: 35px;
+    padding: 30px 50px;
+    background: #2E7D32; /* Solid green like your image */
+    /* If you want gradient use: linear-gradient(90deg, #1B5E20, #43A047) */
 }
 
-.logo {
-    width: 145px;
-    max-height: 50px;
+.banner-logo {
+    width: 170px;
+    height: 170px;
     object-fit: contain;
+    flex-shrink: 0;
+    background: white;
+    border-radius: 50%; /* Makes it circular like in image */
+    padding: 5px;
 }
 
-/* =================================
-   HERO
-================================= */
-
-.hero {
-    text-align: center;
-    color: white;
-    padding: 32px 20px 38px;
-    background: linear-gradient(90deg, #1B5E20, #43A047);
-}
-
-.hero h1 {
+.banner-text h1 {
     margin: 0;
-    font-size: 36px;
-    font-weight: 700;
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+    line-height: 1.1;
 }
 
-.hero p {
+.banner-text p {
     margin: 10px 0 0;
-    font-size: 18px;
-    color: #c8e6c9;
+    font-size: 20px;
+    color: #dcedc8; /* Light greenish white */
 }
 
 /* =================================
    RELEASE CONTAINER
 ================================= */
-
 #releases {
     max-width: 1450px;
     margin: 15px auto;
     padding: 0 20px;
 }
-
-/* =================================
-   RELEASE CARD
-================================= */
 
 .release-card {
     background: white;
@@ -75,10 +63,6 @@ body {
     overflow: hidden;
     box-shadow: 0 3px 12px rgba(46, 125, 50, 0.08);
 }
-
-/* =================================
-   RELEASE HEADER
-================================= */
 
 .release-header {
     min-height: 105px;
@@ -109,10 +93,6 @@ body {
     font-size: 17px;
 }
 
-/* =================================
-   BADGES
-================================= */
-
 .latest-badge,
 .release-badge {
     margin-top: 0;
@@ -133,10 +113,6 @@ body {
     color: #63347d;
 }
 
-/* =================================
-   DOWNLOAD AREA
-================================= */
-
 .download-area {
     padding: 15px 40px;
 }
@@ -151,10 +127,6 @@ body {
     border: 1px solid #c8e6c9;
     border-radius: 15px;
 }
-
-/* =================================
-   APK FILE
-================================= */
 
 .file-info {
     display: flex;
@@ -177,10 +149,6 @@ body {
     font-size: 16px;
 }
 
-/* =================================
-   DOWNLOAD BUTTON
-================================= */
-
 .download-button {
     display: inline-block;
     padding: 12px 45px;
@@ -198,10 +166,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* =================================
-   RELEASE NOTES
-================================= */
-
 .release-notes {
     padding: 12px 40px;
     border-top: 1px solid #eeeeee;
@@ -217,10 +181,6 @@ body {
     color: #77727f;
 }
 
-/* =================================
-   LOADING
-================================= */
-
 .loading {
     text-align: center;
     padding: 50px;
@@ -231,19 +191,25 @@ body {
 /* =================================
    MOBILE
 ================================= */
-
 @media (max-width: 700px) {
-
-    .top-header {
-        padding: 0 20px;
+    .main-banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 25px 20px;
     }
 
-    .hero h1 {
-        font-size: 28px;
+    .banner-logo {
+        width: 120px;
+        height: 120px;
     }
 
-    .hero p {
-        font-size: 15px;
+    .banner-text h1 {
+        font-size: 32px;
+    }
+
+    .banner-text p {
+        font-size: 16px;
     }
 
     .release-header {
