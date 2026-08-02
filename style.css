@@ -14,44 +14,68 @@ body {
 }
 
 /* =================================
-   HEADER
+   HEADER - Hidden / kept for other pages
 ================================= */
 
 .top-header {
-    height: 85px;
-    padding: 0 30px;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(90deg, #1B5E20, #43A047);
-}
-
-.logo {
-    width: 290px;
-    max-height: 80px;
-    object-fit: contain;
+    display: none;
 }
 
 /* =================================
-   HERO
+   HERO - Now matches image banner
 ================================= */
 
 .hero {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 35px;
     color: white;
-    padding: 32px 20px 38px;
+    padding: 35px 50px;
     background: linear-gradient(90deg, #1B5E20, #43A047);
+    text-align: left;
+}
+
+.hero .logo {
+    width: 135px;
+    height: 135px;
+    min-width: 135px;
+    object-fit: contain;
+    background: white;
+    border-radius: 50%;
+    padding: 3px;
+    flex-shrink: 0;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
 }
 
 .hero h1 {
     margin: 0;
-    font-size: 36px;
-    font-weight: 700;
+    font-size: 52px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
 }
 
 .hero p {
     margin: 10px 0 0;
-    font-size: 18px;
+    font-size: 19px;
     color: #c8e6c9;
+    font-weight: 400;
+}
+
+/* Fallback if you didn't wrap text in .hero-text */
+.logo {
+    width: 135px;
+    height: 135px;
+    min-width: 135px;
+    object-fit: contain;
+    background: white;
+    border-radius: 50%;
+    padding: 3px;
 }
 
 /* =================================
@@ -234,14 +258,16 @@ body {
 
 @media (max-width: 700px) {
 
-    .top-header {
-        height: 75px;
-        padding: 0 20px;
+    .hero {
+        padding: 25px 20px;
+        gap: 18px;
     }
 
+    .hero .logo,
     .logo {
-        width: 240px;
-        max-height: 70px;
+        width: 75px;
+        height: 75px;
+        min-width: 75px;
     }
 
     .hero h1 {
@@ -249,7 +275,7 @@ body {
     }
 
     .hero p {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .release-header {
