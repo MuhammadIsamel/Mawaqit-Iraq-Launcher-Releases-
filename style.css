@@ -3,135 +3,263 @@
 ================================= */
 
 * {
-    box-sizing: border-box;
+
+    box-sizing:
+        border-box;
+
 }
+
 
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f7f5fc;
-    color: #171126;
+
+    margin:
+        0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        #f7f5fc;
+
+    color:
+        #171126;
+
 }
 
+
 /* =================================
-   HEADER - Hidden / kept for other pages
+   HEADER
 ================================= */
 
 .top-header {
-    display: none;
+
+    height:
+        60px;
+
+    padding:
+        0 30px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    background:
+        linear-gradient(
+            90deg,
+            #2E7D32,
+            #66BB6A
+        );
+
 }
 
+
+.logo {
+
+    width:
+        145px;
+
+    max-height:
+        50px;
+
+    object-fit:
+        contain;
+
+}
+
+
 /* =================================
-   HERO - Now matches image banner
+   HERO
 ================================= */
 
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 35px;
-    color: white;
-    padding: 35px 50px;
-    background: linear-gradient(90deg, #1B5E20, #43A047);
-    text-align: left;
+
+    text-align:
+        center;
+
+    color:
+        white;
+
+    padding:
+        32px
+        20px
+        38px;
+
+    background:
+        linear-gradient(
+            90deg,
+           #2E7D32,
+            #66BB6A
+        );
+
 }
 
-.hero .logo {
-    width: 135px;
-    height: 135px;
-    min-width: 135px;
-    object-fit: contain;
-    background: white;
-    border-radius: 50%;
-    padding: 3px;
-    flex-shrink: 0;
-}
-
-.hero-text {
-    display: flex;
-    flex-direction: column;
-}
 
 .hero h1 {
-    margin: 0;
-    font-size: 52px;
-    font-weight: 800;
-    letter-spacing: -0.5px;
-    line-height: 1.1;
+
+    margin:
+        0;
+
+    font-size:
+        36px;
+
+    font-weight:
+        700;
+
 }
+
 
 .hero p {
-    margin: 10px 0 0;
-    font-size: 19px;
-    color: #c8e6c9;
-    font-weight: 400;
+
+    margin:
+        10px
+        0
+        0;
+
+    font-size:
+        18px;
+
+    color:
+        #e2d6f5;
+
 }
 
-/* Fallback if you didn't wrap text in .hero-text */
-.logo {
-    width: 135px;
-    height: 135px;
-    min-width: 135px;
-    object-fit: contain;
-    background: white;
-    border-radius: 50%;
-    padding: 3px;
-}
 
 /* =================================
    RELEASE CONTAINER
 ================================= */
 
 #releases {
-    max-width: 1450px;
-    margin: 15px auto;
-    padding: 0 20px;
+
+    max-width:
+        1450px;
+
+    margin:
+        15px
+        auto;
+
+    padding:
+        0
+        20px;
+
 }
+
 
 /* =================================
    RELEASE CARD
 ================================= */
 
 .release-card {
-    background: white;
-    border-radius: 20px;
-    margin-bottom: 12px;
-    overflow: hidden;
-    box-shadow: 0 3px 12px rgba(46, 125, 50, 0.08);
+
+    background:
+        white;
+
+    border-radius:
+        20px;
+
+    margin-bottom:
+        12px;
+
+    overflow:
+        hidden;
+
+    box-shadow:
+        0
+        3px
+        12px
+        rgba(
+            60,
+            0,
+            120,
+            0.08
+        );
+
 }
+
 
 /* =================================
    RELEASE HEADER
 ================================= */
 
 .release-header {
-    min-height: 105px;
-    padding: 20px 40px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    border-bottom: 1px solid #eeeeee;
+
+    min-height:
+        105px;
+
+    padding:
+        20px
+        40px;
+
+    display:
+        flex;
+
+    align-items:
+        flex-start;
+
+    justify-content:
+        space-between;
+
+    border-bottom:
+        1px
+        solid
+        #eeeeee;
+
 }
+
 
 .release-number {
-    display: inline-block;
-    padding: 3px 15px;
-    border-radius: 20px;
-    background: #e4e3e9;
-    color: #77727f;
-    font-size: 15px;
+
+    display:
+        inline-block;
+
+    padding:
+        3px
+        15px;
+
+    border-radius:
+        20px;
+
+    background:
+        #e4e3e9;
+
+    color:
+        #77727f;
+
+    font-size:
+        15px;
+
 }
+
 
 .release-title {
-    margin: 4px 0 2px;
-    font-size: 22px;
+
+    margin:
+        4px
+        0
+        2px;
+
+    font-size:
+        22px;
+
 }
 
+
 .release-date {
-    margin: 0;
-    color: #716b78;
-    font-size: 17px;
+
+    margin:
+        0;
+
+    color:
+        #716b78;
+
+    font-size:
+        17px;
+
 }
+
 
 /* =================================
    BADGES
@@ -139,167 +267,346 @@ body {
 
 .latest-badge,
 .release-badge {
-    margin-top: 0;
-    padding: 6px 18px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 1px;
+
+    margin-top:
+        0;
+
+    padding:
+        6px
+        18px;
+
+    border-radius:
+        20px;
+
+    font-size:
+        14px;
+
+    font-weight:
+        bold;
+
+    letter-spacing:
+        1px;
+
 }
+
 
 .latest-badge {
-    background: #e5f5ec;
-    color: #387b62;
+
+    background:
+        #e5f5ec;
+
+    color:
+        #387b62;
+
 }
 
+
 .release-badge {
-    background: #f2eafd;
-    color: #63347d;
+
+    background:
+        #f2eafd;
+
+    color:
+        #63347d;
+
 }
+
 
 /* =================================
    DOWNLOAD AREA
 ================================= */
 
 .download-area {
-    padding: 15px 40px;
+
+    padding:
+        15px
+        40px;
+
 }
 
+
 .download-box {
-    min-height: 72px;
-    padding: 10px 35px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #e8f5e9;
-    border: 1px solid #c8e6c9;
-    border-radius: 15px;
+
+    min-height:
+        72px;
+
+    padding:
+        10px
+        35px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    background:
+        #f3effc;
+
+    border:
+        1px
+        solid
+        #ddd5ed;
+
+    border-radius:
+        15px;
+
 }
+
 
 /* =================================
    APK FILE
 ================================= */
 
 .file-info {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        20px;
+
 }
+
 
 .file-icon {
-    font-size: 30px;
+
+    font-size:
+        30px;
+
 }
+
 
 .file-name {
-    font-size: 20px;
-    font-weight: 500;
+
+    font-size:
+        20px;
+
+    font-weight:
+        500;
+
 }
 
+
 .file-size {
-    margin-top: 2px;
-    color: #716b78;
-    font-size: 16px;
+
+    margin-top:
+        2px;
+
+    color:
+        #716b78;
+
+    font-size:
+        16px;
+
 }
+
 
 /* =================================
    DOWNLOAD BUTTON
 ================================= */
 
 .download-button {
-    display: inline-block;
-    padding: 12px 45px;
-    border-radius: 10px;
-    background: #2E7D32;
-    color: white;
-    text-decoration: none;
-    font-size: 19px;
-    font-weight: bold;
-    transition: 0.2s;
+
+    display:
+        inline-block;
+
+    padding:
+        12px
+        45px;
+
+    border-radius:
+        10px;
+
+    background:
+        #5700ad;
+
+    color:
+        white;
+
+    text-decoration:
+        none;
+
+    font-size:
+        19px;
+
+    font-weight:
+        bold;
+
+    transition:
+        0.2s;
+
 }
 
+
 .download-button:hover {
-    background: #1B5E20;
-    transform: translateY(-2px);
+
+    background:
+        #3e007e;
+
+    transform:
+        translateY(
+            -2px
+        );
+
 }
+
 
 /* =================================
    RELEASE NOTES
 ================================= */
 
 .release-notes {
-    padding: 12px 40px;
-    border-top: 1px solid #eeeeee;
+
+    padding:
+        12px
+        40px;
+
+    border-top:
+        1px
+        solid
+        #eeeeee;
+
 }
+
 
 .release-notes summary {
-    cursor: pointer;
-    color: #6f6875;
-    font-size: 17px;
+
+    cursor:
+        pointer;
+
+    color:
+        #6f6875;
+
+    font-size:
+        17px;
+
 }
 
+
 .release-notes p {
-    color: #77727f;
+
+    color:
+        #77727f;
+
 }
+
 
 /* =================================
    LOADING
 ================================= */
 
 .loading {
-    text-align: center;
-    padding: 50px;
-    font-size: 20px;
-    color: #6d6478;
+
+    text-align:
+        center;
+
+    padding:
+        50px;
+
+    font-size:
+        20px;
+
+    color:
+        #6d6478;
+
 }
+
 
 /* =================================
    MOBILE
 ================================= */
 
-@media (max-width: 700px) {
+@media (
+    max-width: 700px
+) {
 
-    .hero {
-        padding: 25px 20px;
-        gap: 18px;
+
+    .top-header {
+
+        padding:
+            0
+            20px;
+
     }
 
-    .hero .logo,
-    .logo {
-        width: 75px;
-        height: 75px;
-        min-width: 75px;
-    }
 
     .hero h1 {
-        font-size: 28px;
+
+        font-size:
+            28px;
+
     }
+
 
     .hero p {
-        font-size: 14px;
+
+        font-size:
+            15px;
+
     }
+
 
     .release-header {
-        padding: 20px;
-        flex-direction: column;
-        gap: 15px;
+
+        padding:
+            20px;
+
+        flex-direction:
+            column;
+
+        gap:
+            15px;
+
     }
+
 
     .download-area {
-        padding: 15px 20px;
+
+        padding:
+            15px
+            20px;
+
     }
+
 
     .download-box {
-        padding: 15px;
-        flex-direction: column;
-        gap: 15px;
-        align-items: stretch;
+
+        padding:
+            15px;
+
+        flex-direction:
+            column;
+
+        gap:
+            15px;
+
+        align-items:
+            stretch;
+
     }
+
 
     .download-button {
-        text-align: center;
+
+        text-align:
+            center;
+
     }
 
+
     .release-notes {
-        padding: 12px 20px;
+
+        padding:
+            12px
+            20px;
+
     }
+
 }
