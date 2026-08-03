@@ -26,8 +26,8 @@ body {
 }
 
 .logo {
-    width: 145px;
-    max-height: 50px;
+    width: 200px;
+    max-height: 75px;
     object-fit: contain;
     position: absolute;
     left: 24px; /* distance from left edge */
