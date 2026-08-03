@@ -31,7 +31,7 @@ body {
     object-fit: contain;
     position: absolute;
     left: 20px; /* distance from left edge */
-    top: 20%;
+    top: 16%;
     transform: translateY(-50%);
 }
 
