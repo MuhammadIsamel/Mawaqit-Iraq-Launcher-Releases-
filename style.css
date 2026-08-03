@@ -29,6 +29,10 @@ body {
     width: 145px;
     max-height: 50px;
     object-fit: contain;
+    position: absolute;
+    left: 24px; /* distance from left edge */
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* =================================
