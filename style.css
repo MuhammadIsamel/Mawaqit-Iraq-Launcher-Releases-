@@ -26,12 +26,12 @@ body {
 }
 
 .logo {
-    width: 350px;
-    max-height: 150px;
+    width: 300px;
+    max-height: 125px;
     object-fit: contain;
     position: absolute;
     left: 15px; /* distance from left edge */
-    top: 17%;
+    top: 18%;
     transform: translateY(-50%);
 }
 
