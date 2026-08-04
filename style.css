@@ -30,8 +30,8 @@ body {
     max-height: 125px;
     object-fit: contain;
     position: absolute;
-    left: 15px; /* distance from left edge */
-    top: 18%;
+    left: 10px; /* distance from left edge */
+    top: 19%;
     transform: translateY(-50%);
 }
 
