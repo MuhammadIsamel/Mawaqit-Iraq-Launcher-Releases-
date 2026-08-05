@@ -37,7 +37,7 @@ body {
 
 /* Centered Logo inside top-header */
 .logo {
-    height: 100px;
+    height: 150px;
     width: auto;
     object-fit: contain;
     z-index: 2; /* Keeps logo above background graphics */
