@@ -57,9 +57,9 @@ body {
     pointer-events: none;
 }
 
-/* 2. Bottom Section (Dark Green Banner with Text) */
+/* 2. Bottom Section (Mint Green Banner with Text) */
 .header-content {
-    background-color: #43A047; /* Dark forest green background */
+    background-color: #98FB98; /* Mint green background */
     padding: 22px 20px;
     text-align: center;
     color: #ffffff;
