@@ -14,27 +14,69 @@ body {
 }
 
 /* =================================
-   HEADER
+   HEADER / HERO SECTION (New Design)
 ================================= */
 
-.top-header {
-    height: 60px;
-    padding: 0 30px;
+/* Container wrapper for the full hero banner */
+.hero-banner {
+    width: 100%;
     display: flex;
+    flex-direction: column;
+}
+
+/* 1. Top Section (Light Green with Logo & Curve Overlay) */
+.top-header {
+    height: 140px;
+    background-color: #a3cd9e; /* Light sage green background */
+    display: flex;
+    justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, #1B5E20, #43A047);
+    position: relative;
+    overflow: hidden; /* Clips the background decorative circle */
 }
 
+/* Centered Logo inside top-header */
 .logo {
-    width: 300px;
-    max-height: 125px;
+    height: 100px;
+    width: auto;
     object-fit: contain;
-    position: absolute;
-    left: 3px; /* distance from left edge */
-    top: 19%;
-    transform: translateY(-50%);
+    z-index: 2; /* Keeps logo above background graphics */
 }
 
+/* Decorative background circles on the top right */
+.top-header::after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.15);
+    pointer-events: none;
+}
+
+/* 2. Bottom Section (Dark Green Banner with Text) */
+.header-content {
+    background-color: #26633b; /* Dark forest green background */
+    padding: 30px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.header-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+}
+
+.header-subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    opacity: 0.9;
+}
 /* =================================
    HERO
 ================================= */
