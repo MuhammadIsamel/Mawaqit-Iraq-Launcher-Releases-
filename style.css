@@ -26,7 +26,7 @@ body {
 
 /* 1. Top Section (Light Green with Logo & Curve Overlay) */
 .top-header {
-    height: 140px;
+    height: 150px;
     background-color: #a3cd9e; /* Light sage green background */
     display: flex;
     justify-content: center;
