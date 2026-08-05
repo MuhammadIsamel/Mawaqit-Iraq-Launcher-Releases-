@@ -14,117 +14,27 @@ body {
 }
 
 /* =================================
-   HEADER / HERO SECTION (New Design)
+   HEADER
 ================================= */
 
-/* Container wrapper for the full hero banner */
-.hero-banner {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-/* 1. Top Section (Light Green with Logo & Curve Overlay) */
 .top-header {
-    height: 150px;
-    background-color: #a3cd9e; /* Light sage green background */
+    height: 60px;
+    padding: 0 30px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    position: relative;
-    overflow: hidden; /* Clips the background decorative circle */
+    background: linear-gradient(90deg, #1B5E20, #43A047);
 }
 
-/* Centered Logo inside top-header */
 .logo {
-    height: 150px;
-    width: auto;
-    object-fit: contain;
-    z-index: 2; /* Keeps logo above background graphics */
-}
-/* Container holding the logo and the glow light */
-.logo-wrapper {
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Light / Glow Effect Behind the Logo */
-.logo-wrapper::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
-  /* Size of the light sphere */
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-
-  /* Radial gradient for soft light dispersion */
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.85) 0%,   /* Bright center light */
-    rgba(163, 241, 211, 0.6) 45%,   /* Soft mint green middle transition */
-    rgba(163, 241, 211, 0) 70%      /* Fades to transparent */
-  );
-
-  /* Softens the edges into a natural illumination */
-  filter: blur(15px);
-  
-  /* Keeps the light behind the logo */
-  z-index: 1; 
-}
-
-/* The Logo */
-.logo {
-  position: relative;
-  height: 100px;
-  width: auto;
-  object-fit: contain;
-  
-  /* Ensures logo sits above the light layer */
-  z-index: 2; 
-
-  /* Optional: Adds a subtle light border directly to the logo image */
-  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
-}
-/* Decorative background circles on the top right */
-.top-header::after {
-    content: '';
-    position: absolute;
-    top: -50px;
-    right: -50px;
     width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.15);
-    pointer-events: none;
+    max-height: 125px;
+    object-fit: contain;
+    position: absolute;
+    left: 3px; /* distance from left edge */
+    top: 19%;
+    transform: translateY(-50%);
 }
 
-/* 2. Bottom Section (Mint Green Banner with Text) */
-.header-content {
-    background-color: #32CD32; /* Mint green background */
-    padding: 22px 20px;
-    text-align: center;
-    color: #ffffff;
-}
-
-.header-title {
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 0 0 8px 0;
-}
-
-.header-subtitle {
-    font-size: 1rem;
-    font-weight: 400;
-    margin: 0;
-    opacity: 0.9;
-}
 /* =================================
    HERO
 ================================= */
